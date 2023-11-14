@@ -10,7 +10,7 @@ const start = async () => {
 
   await AppDataSource.initialize().then(() => console.log("Datasource initialized."));
 
-  //server test
+  //서버 테스트
   app.get("/ping", async (req, res) => {
     return res.status(200).json({ message: "pong" });
   });
